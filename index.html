@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>homepage</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 10px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.2s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+</style>
+</head>
+<body>
+<a href="http://www.technoindiagroup.in"><img src="logo2.png" alt="logo" width="160" height="150" align="left"></a>
+<a href="http://www.tib.edu.in"><img src="logo.png" alt="TIG_Logo" width="150" height="150" align="right"></a>
+<center><h1 style="color:black;"><font size="10"><b>TECHNO INDIA BATANAGAR</b></font></h1></center>
+<center><b><h1 style="color:black;"><font size="3">Approved by AICTE, Govt. of India and affiliated to Maulana Abul Kalam Azad University of Technology
+formerly known as Batanagar Institute of Engineering, Management & Science(BIEMS)</font></h1></b></center>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://www.tib.edu.in">Techno India Batanagar</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="Student Management System.html">Student Management System</a></li>
+      <li><a href="library management system.html">Library Management System</a></li>
+      <li><a href="faculty management.html">Faculty Management System</a></li>
+      <li><a href="cocurriculam.html">Co-Curriculam</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="about us.html"><span class="glyphicon glyphicon-user"></span>About Us</a></li>
+      <li><a href="enquiry.html"><span class="glyphicon glyphicon-phone"></span>Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	<li data-target="#myCarousel" data-slide-to="2"></li>
+	<li data-target="#myCarousel" data-slide-to="2"></li>
+	<li data-target="#myCarousel" data-slide-to="2"></li>
+	<li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="01_thumb.jpg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="02_thumb.jpg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="03_thumb.jpg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="05_thumb.jpg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+       <img src="07_thumb.jpg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="17_thumb.jpg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+       <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="slide_3_thumb.jpg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+        <div class="carousel-caption">
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<section id="main-features">
+  <div class="divider_top_black"></div>
+  <div class="container">
+    <div class="row">
+      <div class=" col-md-9 text-justify">
+         <center><b><h3>Why Join Techno India-Batanagar</h3></b></center>
+<br> 
+<p>The serene and exquisite ambience of Techno India-Batanagar , so rare in Kolkata, is an active catalyst for the students to enrich their learning process.
+The college is committed to impart state-of-the-art education to students to enable them to foresee and meet the technological challenges in future and could grow to be competent enough to contribute significantly for the betterment of mankind.
+The team at the helm believes in the best towards grooming the students and transforming them as dynamic leaders of tomorrow.</p>
+<ul class="circle"><li>8.33 acres of lush green campus in the Industrial belt of Kolkata</li>
+<li>
+Well equipped laboratories and library</li>
+<li>
+Barrier free environment (Lift &amp; Ramp available)</li>
+<li>
+WiFi Enabled Campus
+</li>
+<li>32 mbps dedicated leased line</li>
+<li>CCTV</li>
+<li>More than 71 eight pointers in the University Examinations</li>
+<li>Dedicated Faculty Members</li>
+<li>100+ National / International Conference Publications</li>
+<li>
+100+ Referred Journal Publications</li>
+<li>
+Students training in Hardcore Industries</li>
+<li>
+Active participation of students in all events..
+</li>
+<br>
+</ul>
+<center>
+<h2 style="text-align:center">Tib At a Glance</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="e.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="c.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="a.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="d.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 1</div>
+      <img src="e.jpg" style="width:100%" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 2</div>
+      <img src="c.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="a.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="d.jpg" style="width:100%">
+    </div>
+   
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="e.jpg" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="c.jpg" style="width:100%" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="a.jpg" style="width:100%" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="d.jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br>
+<br>
+ <div class="footer">
+<br>
+</div>   
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enquiry Page</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+video {
+    width: 100%;
+    height: auto;
+}
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:50px;height:700px;color: #fff; background-image: url("main.jpg");}
+  #section2 {padding-top:50px;height:700px;color: #000000; }
+  #section3 {padding-top:50px;height:850px;color: #000000; }
+  #section4 {padding-top:50px;height:500px;color: #000000 }
+  
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">TIB</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">Route Map</a></li>
+          <li><a href="#section3">Gallary</a></li>
+              <li><a href="#section4">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+  <a href="http://www.technoindiagroup.in"><img src="logo2.png" alt="logo" width="160" height="150" align="right"></a>
+<a href="http://www.tib.edu.in"><img src="logo.png" alt="TIG_Logo" width="150" height="150" align="left"></a>
+<center><h1 style="color:black;"><font size="10"><b>TECHNO INDIA BATANAGAR</b></font></h1></center>
+<center><b><h1 style="color:black;"><font size="3">Approved by AICTE, Govt. of India and affiliated to Maulana Abul Kalam Azad University of Technology
+formerly known as Batanagar Institute of Engineering, Management & Science(BIEMS)</font></h1></b></center>
+<hr>
+</div>
+<div id="section2" class="container-fluid">
+  <center><h1>Route Map</h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.3243107788694!2d88.2204049149581!3d22.4920121852243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02765321b3ac7b%3A0xcb343879680ba525!2sTECHNO+INDIA+-+BATANAGAR!5e0!3m2!1sen!2sin!4v1469525102973" style="border:0" allowfullscreen="" width="100%" height="350" frameborder="0"></iframe>
+<br>
+<br>
+<h3>
+	How to Reach</h3><hr>
+<p>
+	<strong>By Train:</strong> From <b>Sealdah </b>Station, take the Budge Budge Local &amp; get down at Nangi Station. TI-B is about 1km from Nangi Station.</p>
+<p>
+	<strong>By Bus:</strong> <b>Howrah </b>- Batanagar Mini and S47.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; From <b>Taratala </b>take any bus that goes to Budge Budge .</p>
+<p>
+	<strong>Distance:</strong> <b>Dharmatala </b>to Campus: about <em>16&nbsp;</em>km, Taratala to Campus: about <em>9</em> km.</p>
+</div>  
+  
+<div id="section3" class="container-fluid">
+  <center><h1>College Seminer</h1>
+ <br>
+  <video width="400" controls autoplay>
+  <source src="12378.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+<div id="section4" class="container-fluid">
+  <center><h1>Review</h1></center>
+ <br>
+<div class="container">
+  <form action="">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  </div>
+</body>
+</html>

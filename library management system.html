@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("lms1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("lms2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("lms3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  
+  <a href="index.html">
+<img src="logo.png" alt="Go To Homepage!" width="75" height="70" border="0">
+</a>
+  <div class="header-right">
+    <a class="active" href="index.html">HOME</a>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">BOOK ENTRY</button>
+    <a href="view book.html">VIEW BOOK</a>
+  </div>
+</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="POST">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h3>Book Entry Section</h3>
+    </div>
+
+    <div class="container">
+
+      
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Your Name" name="name" required>
+      
+      <label for="department"><b>Department</b></label>
+      <input type="text" placeholder="Enter Your Department" name="department" required>
+
+      <label for="semester"><b>Semester</b></label>
+      <input type="text" placeholder="Enter Your Semester" name="semester" required>
+
+      <label for="bname"><b>Book Name</b></label>
+      <input type="text" placeholder="Enter Bookname" name="bname" required>
+
+      <label for="aname"><b>Author's Name</b></label>
+      <input type="text" placeholder="Enter Author's Name" name="aname" required>
+       
+      <label for="quantity"><b>Quantity</b></label>
+      <input type="text" placeholder="Enter Quantity" name="quantity" required>
+
+      <button type="submit">Login</button>
+ </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">LIBRARY MANAGEMENT SYSTEM</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">TECHNO INDIA BATANAGAR</h3>
+  <p>TI- Batanagar Library is a closed access library located at the first floor of the main building with 409.35 sq. meters area as per AICTE requirements. The library is fully automated with ION Software of TCS. Till now the library houses a collection of more than three thousand titles and near about ten thousand volumes of books, thirty titles of National Journals, thirty five Technological and informative magazines and English newspapers. The library has a book bank facility where every student is lent six books for the whole semester. Apart from this, each student is provided with four additional books on demand according to their need. TI- Batanagar library has a comfortable and peaceful reading room where hundred students can sit and study at a time. The reference section contains books which students/faculties/staffs can refer. The library also has reprographic facility as per AICTE norms.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <br>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+   </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+   <br>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">A UNIT OF TECHNO INDIA GROUP</span>
+  </div>
+</div>
+
+
+
+</body>
+</html>
