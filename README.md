@@ -4,4 +4,3 @@ This website is based on the student management system of my college Techno Inte
 
 <hr>
 <h2>Let's see how to homescreen looks like</h2>
-![img](1.jpg)
